@@ -449,7 +449,7 @@ html{
       top: 0;
       left: 0;
       width: 100%;
-      transition: .2s linear;
+      transition: .4s linear;
       padding-bottom: 20px;
       z-index: 99;
 
@@ -682,11 +682,11 @@ html{
 
 
 .places__card::after {
-    position: relative;
+    position: absolute;
     display: block;
     content: '';
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background-color: rgba(21, 24, 36, 0.4);
     position: absolute;
     top: 0;
@@ -695,7 +695,8 @@ html{
 }
 
 .places__card:hover .places__card-pic{
-    transform: scale(1.05);
+    transform: scale(1.3);
+    transition: .3s;
 }
 
 
@@ -714,7 +715,7 @@ html{
 
 .places__card-pic{
     width: 100%;
-    transition: .65 linear;
+
 }
 
 .places__card-link {
@@ -723,7 +724,7 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 4;
+    z-index: 4;    
 }
 
 .places__card_size_sm {
